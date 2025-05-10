@@ -9,7 +9,7 @@ endif
 
 # Project: PROJECT_NAME
   ProjectName         := PROJECT_NAME
-  Project             := $(ProjectName).elf
+  Project             := $(ProjectName)
   Target              := $(Bins)/$(Project)
   CC_Objects          := $(patsubst $(Sources)/%.c,$(Tmps)/%.$(OBJ_SUFFIX),$(wildcard $(Sources)/$(ProjectName)/*.c))
   CPP_Objects         := $(patsubst $(Sources)/%.cpp,$(Tmps)/%.$(OBJ_SUFFIX),$(wildcard $(Sources)/$(ProjectName)/*.cpp))

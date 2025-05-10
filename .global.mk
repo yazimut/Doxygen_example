@@ -29,7 +29,7 @@ export Config ?= Debug
 
 # Global C/C++ defines
 ifeq ($(Config), Debug)
-  export Defines := DEBUG
+  export Defines := DEBUG=true
 else
-  export Defines := 
+  export Defines := DEBUG=false
 endif
